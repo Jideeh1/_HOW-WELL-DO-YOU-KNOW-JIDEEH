@@ -6,6 +6,8 @@ main {
 }
 
 .profile-card {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
     width: 30cqw;
     height: 25cqw;
     position: absolute;
@@ -51,6 +53,7 @@ main {
 }
 
 .info-table {
+    transform: translateZ(0cqw);
     width: 50%;
     height: 100%;
     border-radius: var(--r-small-border);
@@ -60,6 +63,7 @@ main {
     position: relative;
     z-index: 3;
     background-image: linear-gradient(to bottom, #1a160e);
+    transition: transform .5s ease-in-out;
 
     .info-con {
         position: relative;
@@ -78,7 +82,19 @@ main {
             font-weight: var(--s-main);
             font-size: var(--s-subtext);
         }
+
+        .user-description {
+            font-weight: var(--s-main);
+            font-size: var(--s-subsubtext);
+            padding-top: 1cqw;
+            text-align: justify;
+        }
     }
+
+}
+
+.info-table:hover {
+    transform: translateZ(5cqw);
 }
 
 .user-images-con {
@@ -159,6 +175,7 @@ main {
 
 
 .board-table {
+    transform: translateZ(0cqw);
     width: 50%;
     height: 100%;
     border-radius: var(--r-small-border);
@@ -167,4 +184,8 @@ main {
     position: relative;
     z-index: 3;
     backdrop-filter: contrast(103%);
+}
+
+.board-table:hover {
+    transform: translateZ(5cqw);
 }

@@ -64,4 +64,3 @@ console.log(コンソルメセージ);
   updateStatus();
   setInterval(updateStatus, 1000);
 })();
-
