@@ -1,4 +1,5 @@
 var コンソルメセージ = `
+THIS WEBSITE IS STILL UNDER MAINTENANCE.\n\n
 If you're here to scrutinize the logic of my code, reconsider before your head stars hurting.\n
 It'd be a big mistake trying to read my HTML and Javascript. The opposite can be said about my css however.\n
 I actually encourage you to go ahead and check my stylings, maybe you'll learn something new. Visit sources to see.\n
