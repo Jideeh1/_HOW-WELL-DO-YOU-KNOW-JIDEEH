@@ -1,8 +1,3 @@
-let musicList = document.querySelector('.music-list-container');
-let dehaze = document.querySelector('.lookup');
-let expand = document.querySelector('.expand');
-let characterList = document.querySelector('.characters');
-
 var consoleMessage = `
 If you're here to scrutinize the logic of my code, reconsider before your head stars hurting.\n
 It'd be a big mistake trying to read my HTML and Javascript. The opposite can be said about my css however.\n
