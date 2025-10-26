@@ -26,6 +26,7 @@ live view of this project is under this link: https://comfort-space.netlify.app/
 - [Ripple.js](https://github.com/sirxemic/jquery.ripples)
 - [Markdown Editor](https://markdownlivepreview.com)
 - [Discord Status | API Lanyard](https://github.com/Phineas/lanyard)
+- [Dust Particles](https://codepen.io/uiswarup/pen/oNXYNOB)
 
 ## License
 
