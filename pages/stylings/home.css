@@ -1,8 +1,11 @@
 main {
-    transform: translate(-50%, 50%);
-    top: 10%;
-    left: 30%;
-    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    gap: .5cqw;
+    margin: 0;
+    padding: 8cqw;
+    box-sizing: border-box;
 }
 
 .profile-card {
@@ -10,7 +13,7 @@ main {
     transform: perspective(1000px);
     width: 30cqw;
     height: 25cqw;
-    position: absolute;
+    margin: auto;
     border-radius: var(--r-border);
     border: var(--s-border);
     padding: 1cqw;
@@ -188,4 +191,12 @@ main {
 
 .board-table:hover {
     transform: translateZ(5cqw);
+}
+
+.hero-text {
+    font-size: 5cqw;
+    text-align: center;
+    padding-left: 5cqw;
+    margin: auto 0;
+    z-index: -3;
 }

@@ -64,3 +64,25 @@ console.log(コンソルメセージ);
   updateStatus();
   setInterval(updateStatus, 1000);
 })();
+
+const burstOne = `
+   <span>I</span> have this favorite flower, one that holds a special place in my heart. I've always dreamed of this flower to endure a long life until mine gave out. To last until I'm gray and old. You can't really call that anything but a pipe dream, really. But it's a simple wish I wanted to come true.
+  <br><br>
+    Each morning I'd visit it, making sure just the right amount of sunlight reaches it stems and leaves. And each day I'd faithfully tend to it, going back and forth despite the routine getting exhausting.
+`;
+
+const burstTwo = `
+  But this morning, I saw a petal fall on the ground. I couldn't help but feel saddened. I didn't pay it much heed, until more one petal fell after another. And since that day, I knew I couldn't do anything. I knew I couldn't force a flower to 'grow' when it's time to wither. Yet, I still watered it every dayーjust in case there's a miracle that it'll bloom again like how it did before.
+  <br><br>
+  And I guess there's nothing wrong with silently hoping for something you really love, because I know I can't force anyone to grow and press on. But I can be there for themーfor as long as they damn want to. Because that's the only thing I can guarantee.
+  <br><br>
+  Then, at the very least, I saw how hard you struggled- how hard you tried. And it makes me really proudーto see you try and try again with every breath you take. You held on so long, and you did so well. You really did good.
+`;
+
+const burstThree = `
+  You probably got the idea already, but this isn't about the plants.
+`;
+
+document.querySelector('.burst-one').innerHTML = burstOne;
+document.querySelector('.burst-two').innerHTML = burstTwo;
+document.querySelector('.third-column').innerHTML = burstThree;

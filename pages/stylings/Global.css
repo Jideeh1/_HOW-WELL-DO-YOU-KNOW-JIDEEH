@@ -6,7 +6,7 @@
     --c-active: ;
     --c-focus: ;
     
-    --c-bg: #0c0c0e;
+    --c-bg: #0c0c0c;
     --c-bg-accent: ;
         
     --w-main: 500;
@@ -27,6 +27,10 @@
     --r-small-border: .5cqw;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
@@ -37,8 +41,11 @@
     margin: 0;
 }
 
-html {
+html,
+body {
     background-color: var(--c-bg);
+    padding: 0;
+    margin: 0;
 }
 
 ::selection {
