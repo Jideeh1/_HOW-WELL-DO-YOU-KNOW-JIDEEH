@@ -1,6 +1,6 @@
 # Comfort Space
 
-- **Version**: 2025.10
+- **Version**: 2025.10.26
 - **Status**: In Development
 - **Developers**: [Jideeh1](https://github.com/Jideeh1)
 
@@ -9,9 +9,8 @@ How well do you know Jideeh? This is a website that gauges your understanding of
 読んでいただきありがとうございます　－　 JD
 
 live view of this project is under these link:
-
-- [Netlify-hosted](https://comfort-space.netlify.app/pages/index.html)
-- [Github.io](https://jideeh1.github.io)
+[Netlify-hosted](https://comfort-space.netlify.app/pages/index.html)
+[Github.io](https://jideeh1.github.io)
 
 ### Website Features
 
@@ -28,6 +27,7 @@ live view of this project is under these link:
 - [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 - [Ripple.js](https://github.com/sirxemic/jquery.ripples)
 - [Markdown Editor](https://markdownlivepreview.com)
+- [Discord Status | API Lanyard](https://github.com/Phineas/lanyard)
 
 ## License
 
