@@ -10,11 +10,11 @@ How well do you know Jideeh? This is a website that gauges your understanding of
 
 live view of this project is under this link: https://comfort-space.netlify.app/pages/index.html
 
-### Website Features
-
 <!-- Things I usually have on my website -->
 
-- CSS-based tab switching
+### Website Features
+
+- CSS-based tab switching (WIP)
 - Media queries for phone layouts (WIP)
 - Semantics HTML structure
 

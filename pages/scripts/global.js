@@ -9,7 +9,6 @@ Yours Truly,\nJideeh\n\n
 `
 
 console.log(コンソルメセージ);
-// https://discord.com/users/563051292251914259
 
 (async function () {
   const STATUS_URL = "https://api.lanyard.rest/v1/users/563051292251914259";
@@ -27,23 +26,23 @@ console.log(コンソルメセージ);
 
 
     if (presence === "dnd") {
-      statusEl.style.setProperty("--before-width", ".8cqw");
-      statusEl.style.setProperty("--before-height", ".4cqw");
+      statusEl.style.setProperty("--before-width", ".6cqw");
+      statusEl.style.setProperty("--before-height", ".3cqw");
       statusEl.style.setProperty("--before-bg", "#1a160e");
-      statusEl.style.setProperty("--before-radius", "1cqw");
+      statusEl.style.setProperty("--before-radius", ".6cqw");
     } else if (presence === "online") {
-      statusEl.style.setProperty("--before-width", ".4cqw");
-      statusEl.style.setProperty("--before-height", ".4cqw");
+      statusEl.style.setProperty("--before-width", ".3cqw");
+      statusEl.style.setProperty("--before-height", ".3cqw");
       statusEl.style.setProperty("--before-bg", "transparent");
       statusEl.style.setProperty("--before-radius", "100%");
     } else if (presence === "idle" || presence === "offline") {
-      statusEl.style.setProperty("--before-width", ".5cqw");
-      statusEl.style.setProperty("--before-height", ".5cqw");
+      statusEl.style.setProperty("--before-width", ".3cqw");
+      statusEl.style.setProperty("--before-height", ".3cqw");
       statusEl.style.setProperty("--before-bg", "#1a160e");
       statusEl.style.setProperty("--before-radius", "100%");
     } else {
-      statusEl.style.setProperty("--before-width", ".5cqw");
-      statusEl.style.setProperty("--before-height", ".5cqw");
+      statusEl.style.setProperty("--before-width", ".3cqw");
+      statusEl.style.setProperty("--before-height", ".3cqw");
       statusEl.style.setProperty("--before-bg", "transparent");
       statusEl.style.setProperty("--before-radius", "100%");
     }

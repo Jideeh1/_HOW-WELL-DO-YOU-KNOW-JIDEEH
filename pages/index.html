@@ -22,35 +22,51 @@
     <title>Home</title>
   </head>
   <body>
-    <figure class="profile-card">
-      <img
-        src="https://images-ext-1.discordapp.net/external/AsCq2nLZ-DNeBTU3OZMvBqnu7SuM9glnhu0ZrFSewjE/%3Fsize%3D1024/https/cdn.discordapp.com/banners/563051292251914259/6de9a71a8ad70de3c919e04e927915ac.png?format=webp&quality=lossless&width=563&height=199"
-        class="profile-bg"
-      />
-      <div class="profile-bg-two"></div>
+    <main class="hero">
+      <figure
+        class="profile-card"
+        data-tilt
+        data-tilt-startX="-10"
+        data-tilt-startY="-10"
+        data-tilt-reset-to-start="true"
+      >
+        <img
+          src="https://images-ext-1.discordapp.net/external/AsCq2nLZ-DNeBTU3OZMvBqnu7SuM9glnhu0ZrFSewjE/%3Fsize%3D1024/https/cdn.discordapp.com/banners/563051292251914259/6de9a71a8ad70de3c919e04e927915ac.png?format=webp&quality=lossless&width=563&height=199"
+          class="profile-bg"
+        />
+        <div class="profile-bg-two"></div>
 
-      <aside class="info-table">
-        <div class="user-images-con">
-          <img
-            src="https://images-ext-1.discordapp.net/external/AsCq2nLZ-DNeBTU3OZMvBqnu7SuM9glnhu0ZrFSewjE/%3Fsize%3D1024/https/cdn.discordapp.com/banners/563051292251914259/6de9a71a8ad70de3c919e04e927915ac.png?format=webp&quality=lossless&width=563&height=199"
-            class="banner"
-          />
-
-          <div class="avatar-con">
-            <div id="status"></div>
+        <aside class="info-table">
+          <div class="user-images-con">
             <img
-              src="https://cdn.discordapp.com/avatars/563051292251914259/bdb0bc370e36d20217073a5eeca2c5f1.png?size=256"
-              class="avatar"
+              src="https://images-ext-1.discordapp.net/external/AsCq2nLZ-DNeBTU3OZMvBqnu7SuM9glnhu0ZrFSewjE/%3Fsize%3D1024/https/cdn.discordapp.com/banners/563051292251914259/6de9a71a8ad70de3c919e04e927915ac.png?format=webp&quality=lossless&width=563&height=199"
+              class="banner"
             />
+
+            <a
+              href="https://discord.com/users/563051292251914259"
+              target="_blank"
+              class="avatar-con"
+            >
+              <div class="avatar">
+                <div id="status"></div>
+                <img
+                  src="https://cdn.discordapp.com/avatars/563051292251914259/bdb0bc370e36d20217073a5eeca2c5f1.png?size=256"
+                  class="avatar"
+                />
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="info-con">
-          <div class="username">Jideeh</div>
-          <div class="attributes">Full-Stack Developer | INTP<span></span></div>
-        </div>
-      </aside>
-      <aside class="board-table"></aside>
-    </figure>
+          <div class="info-con">
+            <div class="username">Jideeh</div>
+            <div class="attributes">
+              Full-Stack Developer | INTP<span></span>
+            </div>
+          </div>
+        </aside>
+        <aside class="board-table"></aside>
+      </figure>
+    </main>
 
     <script src="/pages/scripts/global.js"></script>
     <script src="/pages/scripts/vanilla-tilt.js"></script>
