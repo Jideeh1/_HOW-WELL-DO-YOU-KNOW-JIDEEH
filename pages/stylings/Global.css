@@ -12,6 +12,9 @@
     --s-hover: ;
     --s-active: ;
     --s-focus: ;
+
+    --c-bg: ;
+    --c-bg-accent: ;#
 }
 
 * {

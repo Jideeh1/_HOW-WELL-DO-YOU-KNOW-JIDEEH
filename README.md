@@ -1,22 +1,28 @@
-# Jideeh Blog
-
-## Comfort Space
+# Comfort Space
 
 - **Version**: 2025.10
 - **Status**: In Development
 - **Developers**: [Jideeh1](https://github.com/Jideeh1)
 
-How well do you know Jideeh? This is a wbesite to gauge your understanding of Jideeh through quizzes. Not only that, but this website serves as a comfort space for jideeh that tackles various topics. So think of it as a blog more than a portfolio.
+How well do you know Jideeh? This is a website that gauges your understanding of Jideeh through quizzes. This website also serves as a comfort space for jideeh that tackles through various topics. Hobbies, games, journaling, and whole lot more. Essentially a blog more than a portfolio.
 
 読んでいただきありがとうございます　－　 JD
 
 live view of this project is under these link:
+
+### Website Features
+
+- CSS-based tab switching
+- Media queries for phone layouts (WIP)
+- Semantics HTML structure
 
 ### Resources Used
 
 - [W3School Documentations](https://www.w3schools.com/)
 - [mdnW Web Docs](https://developer.mozilla.org/en-US/)
 - [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+- [Ripple.js](https://github.com/sirxemic/jquery.ripples)
+- [Markdown Editor](https://markdownlivepreview.com)
 
 ## License
 
