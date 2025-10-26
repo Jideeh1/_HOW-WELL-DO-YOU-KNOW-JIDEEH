@@ -6,7 +6,7 @@
 - **Status**: In Development
 - **Developers**: [Jideeh1](https://github.com/Jideeh1)
 
-How well do you know Jideeh? This is a wbesite to gauge your understanding of Jideeh in various topics. This little comfort space will also help you understand Jideeh!
+How well do you know Jideeh? This is a wbesite to gauge your understanding of Jideeh through quizzes in. Not only that, but this website serves as a comfort space for jideeh that tackles various topics. So think of it as a blog more than a portfolio.
 
 読んでいただきありがとうございます　－　 JD
 
