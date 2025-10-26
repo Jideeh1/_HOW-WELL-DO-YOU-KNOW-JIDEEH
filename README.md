@@ -9,8 +9,9 @@ How well do you know Jideeh? This is a website that gauges your understanding of
 読んでいただきありがとうございます　－　 JD
 
 live view of this project is under these link:
-[Netlify-hosted](https://comfort-space.netlify.app/pages/index.html)
-Github.io
+
+- [Netlify-hosted](https://comfort-space.netlify.app/pages/index.html)
+- [Github.io](https://jideeh1.github.io)
 
 ### Website Features
 
