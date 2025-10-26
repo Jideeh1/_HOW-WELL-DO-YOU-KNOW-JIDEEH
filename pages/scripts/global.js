@@ -30,19 +30,22 @@ console.log(コンソルメセージ);
       statusEl.style.setProperty("--before-width", ".8cqw");
       statusEl.style.setProperty("--before-height", ".4cqw");
       statusEl.style.setProperty("--before-bg", "#1a160e");
+      statusEl.style.setProperty("--before-radius", "1cqw");
     } else if (presence === "online") {
       statusEl.style.setProperty("--before-width", ".4cqw");
       statusEl.style.setProperty("--before-height", ".4cqw");
       statusEl.style.setProperty("--before-bg", "transparent");
+      statusEl.style.setProperty("--before-radius", "100%");
     } else if (presence === "idle" || presence === "offline") {
       statusEl.style.setProperty("--before-width", ".5cqw");
       statusEl.style.setProperty("--before-height", ".5cqw");
       statusEl.style.setProperty("--before-bg", "#1a160e");
+      statusEl.style.setProperty("--before-radius", "100%");
     } else {
-      // fallback
       statusEl.style.setProperty("--before-width", ".5cqw");
       statusEl.style.setProperty("--before-height", ".5cqw");
       statusEl.style.setProperty("--before-bg", "transparent");
+      statusEl.style.setProperty("--before-radius", "100%");
     }
   }
 

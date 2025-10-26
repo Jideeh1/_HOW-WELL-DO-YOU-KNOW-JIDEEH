@@ -120,6 +120,7 @@ html {
 
         .username{
             font-weight: bolder;
+            font-size: var(--s-main);
         }
 
         .attributes {
@@ -169,6 +170,7 @@ html {
             --before-width: .4cqw;
             --before-height: .4cqw;
             --before-bg: transparent;
+            --before-radius: 100%;
         }
 
         #status::before {
@@ -179,7 +181,7 @@ html {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 1cqw;
+            border-radius: var(--before-radius);
             background-color: var(--before-bg);
             pointer-events: none;
             display: block;
