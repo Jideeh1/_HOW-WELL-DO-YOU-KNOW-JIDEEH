@@ -1,3 +1,19 @@
+:root {
+    --c-main: ;
+    --c-subtext: ;
+    
+    --s-main: ;
+    --s-subtext: ;
+
+    --c-hover: ;
+    --c-active: ;
+    --c-focus: ;
+
+    --s-hover: ;
+    --s-active: ;
+    --s-focus: ;
+}
+
 * {
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
@@ -7,7 +23,6 @@
     margin: 0;
 }
 
-
 ::selection {
   background: #80004660; /*Highlight Color*/
   color: rgb(242, 176, 255); /*Text Color*/
@@ -15,9 +30,9 @@
 
 .material-symbols-outlined {
     user-select: none;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 250,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 250,
+    'GRAD' 0,
+    'opsz' 24
 }
