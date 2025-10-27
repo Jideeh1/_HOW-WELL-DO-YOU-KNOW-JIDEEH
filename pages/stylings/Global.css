@@ -1,30 +1,31 @@
 :root {
-    --c-main: #d8d8d8;
-    --c-subtext: ;
+    --c-main: #ffffff;
+    --c-subtext: #656565;
     
     --c-hover: ;
     --c-active: ;
     --c-focus: ;
     
-    --c-bg: #0c0c0c;
+    --c-bg: #121212;
+    --c-bg-vary: #1f1f1f;
     --c-bg-accent: ;
         
     --w-main: 500;
     --w-subtext: 400;
     
-    --s-main: 1cqw;
-    --s-subtext: .6cqw;
-    --s-subsubtext: .55cqw;
+    --s-main: 1.5cqw;
+    --s-subtext: 1cqw;
+    --s-subsubtext: .5cqw;
 
     --s-hover: ;
     --s-active: ;
     --s-focus: ;
 
-    --s-border: .13cqw solid #4f4f5050;
-    --s-small-border: .1cqw solid #4f4f5020;
+    --s-outline: .13cqw solid #4f4f5050;
+    --s-thin-outline: .1cqw solid #4f4f5050;
 
-    --r-border: 1cqw;
-    --r-small-border: .5cqw;
+    --o-radius: 1cqw;
+    --o-thin-radius: .5cqw;
 }
 
 ::-webkit-scrollbar {
@@ -34,15 +35,14 @@
 * {
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
-    font-family: "Noto Sans JP";
+    font-family: "Fira Mono";
     font-weight: var(--w-main);
     color: var(--c-main);
     padding: 0;
     margin: 0;
 }
 
-html,
-body {
+html{
     background-color: var(--c-bg);
     padding: 0;
     margin: 0;
@@ -62,3 +62,140 @@ body {
     'opsz' 24
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3cqw;
+    max-width: 1024px;
+    margin: auto;
+
+
+    .nav-con {
+        display: flex;
+
+        h1 {
+            font-family: "fira mono";
+            font-size: var(--s-subtext);
+            margin-top: auto;
+            margin-right: 1.5cqw;
+            font-weight: bolder;
+            user-select: none;
+            cursor: pointer;
+
+            span {
+                color: #56768b;
+                font-weight: bolder;
+                font-family: "fira mono";
+            }
+        }
+
+        .buttons-con {
+            display: flex;
+            gap: 1.5cqw;
+            vertical-align: middle;
+            width: max-content;
+            
+            a {
+                text-decoration: none;
+                font-family: "fira mono";
+                color: var(--c-subtext);
+                font-size: var(--s-subtext);
+                margin-top: auto;
+            }
+
+            a:hover {
+                color: var(--c-main);
+            }
+
+            .more-con {
+                margin-top: auto;
+                position: relative;
+
+                .section-list {
+                    position: absolute;
+                    width: 45cqw;
+                    background-color: var(--c-bg-vary);
+                    height: 13cqw;
+                    right: -20cqw;
+                    top: 2cqw;
+                    border-radius: var(--o-radius);
+                    border: var(--s-outline);
+                    display: flex;
+                    gap: 1cqw;
+                    padding: 1cqw;
+
+                    .big-option {
+                        position: relative;
+                        height: 13cqw;
+                        width: 13cqw;
+                        border-radius: var(--o-thin-radius);
+                        border: var(--s-thin-outline);
+
+                        img {
+                            object-fit: cover;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: var(--o-thin-radius);
+                            border: var(--s-thin-outline);
+                            object-position: 50% 80%;
+                            opacity: .3;
+                            cursor: pointer;
+                            z-index: 1;
+                        }
+                         img:hover {
+                            opacity: .5;
+                         }
+
+                         .text-con {
+                            position: absolute;
+                            bottom: .5cqw;
+                            left: .5cqw;
+                            width: 13cqw;
+                            user-select: none;
+                            z-index: 2;
+
+                            h1 {
+                                font-weight: 500;
+                                font-size: 1cqw;
+                            }
+
+                            p {
+                                font-weight: 100;
+                                font-size: .6cqw;
+                                text-wrap: wrap;
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    }
+
+    i {
+        color: var(--c-subtext);
+        animation: none;
+        cursor: pointer;
+        font-size: var(--s-subtext);
+    }
+
+    i:hover {
+        color: var(--c-main);
+        animation: spin 2s infinite ease-in-out;
+    }
+
+}
+
+.modal-con {
+    background-color: black;
+    opacity: .4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+
+main {
+    max-width: 1024px;
+    margin: auto;
+}
