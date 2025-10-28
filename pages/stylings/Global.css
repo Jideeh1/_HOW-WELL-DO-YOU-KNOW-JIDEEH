@@ -166,6 +166,39 @@ nav {
                             }
                          }
                     }
+
+                    .small-options-con {
+                        display: flex;
+
+                        .item {
+                            display: flex;
+                            flex-direction: row;
+
+                            .icon {
+                                display: flex;
+                                height: 4cqw;
+                                width: 4cqw;
+                                background-color: red;
+                                border-radius: .3cqw;
+
+                                span {
+                                    animation: none;
+                                    cursor: pointer;
+                                    color: var(--c-subtext);
+                                    margin: auto;
+                                    font-size: 3cqw;
+                                }
+
+                                span:hover {
+                                    color: var(--c-main);
+                                }
+
+                                .text-area {
+                                    
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
