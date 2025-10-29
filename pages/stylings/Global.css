@@ -1,6 +1,6 @@
 :root {
     --c-main: #ffffff;
-    --c-subtext: #656565;
+    --c-subtext: #a5a5a5;
     
     --c-hover: ;
     --c-active: ;
@@ -8,7 +8,13 @@
     
     --c-bg: #121212;
     --c-bg-vary: #1f1f1f;
+    --c-bg-vary-two: #2a2a2a;
     --c-bg-accent: ;
+
+    --h-bg: ;
+    --h-bg-vary: ;
+    --h-bg-vary-two: #3a3939;
+    --h-bg-accent: #454545;
         
     --w-main: 500;
     --w-subtext: 400;
@@ -95,15 +101,16 @@ nav {
             vertical-align: middle;
             width: max-content;
             
-            a {
+            .buttons {
                 text-decoration: none;
                 font-family: "fira mono";
                 color: var(--c-subtext);
                 font-size: var(--s-subtext);
                 margin-top: auto;
+                cursor: pointer;
             }
 
-            a:hover {
+            .buttons:hover {
                 color: var(--c-main);
             }
 
@@ -113,21 +120,22 @@ nav {
 
                 .section-list {
                     position: absolute;
-                    width: 45cqw;
+                    width: max-content;
                     background-color: var(--c-bg-vary);
-                    height: 13cqw;
+                    height: max-content;
                     right: -20cqw;
                     top: 2cqw;
                     border-radius: var(--o-radius);
                     border: var(--s-outline);
-                    display: flex;
                     gap: 1cqw;
                     padding: 1cqw;
+                    opacity: 0;
+                    display: none;
 
                     .big-option {
                         position: relative;
-                        height: 13cqw;
-                        width: 13cqw;
+                        height: 13.6cqw;
+                        width: 13.6cqw;
                         border-radius: var(--o-thin-radius);
                         border: var(--s-thin-outline);
 
@@ -142,8 +150,9 @@ nav {
                             cursor: pointer;
                             z-index: 1;
                         }
+
                          img:hover {
-                            opacity: .5;
+                            opacity: .6;
                          }
 
                          .text-con {
@@ -169,36 +178,76 @@ nav {
 
                     .small-options-con {
                         display: flex;
+                        cursor: pointer;
+                        flex-direction: column;
+                        gap: .5cqw;
 
                         .item {
                             display: flex;
                             flex-direction: row;
+                            background-color: var(--c-bg-vary-two);
+                            height: 3.3cqw;
+                            padding: .5cqw;
+                            border-radius: .5cqw;
+                            gap: 1cqw;
+                            width: 20cqw;
+
 
                             .icon {
                                 display: flex;
-                                height: 4cqw;
-                                width: 4cqw;
-                                background-color: red;
+                                height: 3.3cqw;
+                                width: 3.3cqw;
+                                background-color: var(--h-bg-vary-two);
                                 border-radius: .3cqw;
 
                                 span {
                                     animation: none;
                                     cursor: pointer;
                                     color: var(--c-subtext);
+                                    font-size: 1.5cqw;
                                     margin: auto;
-                                    font-size: 3cqw;
                                 }
 
                                 span:hover {
                                     color: var(--c-main);
                                 }
+                            }
 
-                                .text-area {
-                                    
+                            .text-area {
+                                display: flex;
+                                flex-direction: column;
+                                gap: .2cqw;
+                                margin: auto 0;
+
+                                h1 {
+                                    font-size: 1cqw;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    font-size: .7cqw;
+                                    color: var(--c-subtext);
                                 }
                             }
                         }
+
+                        .item:hover {
+                            background-color: var(--h-bg-vary-two);
+
+                            p {
+                                color: var(--c-main);
+                            }
+
+                            .icon {
+                                background-color: var(--c-subtext);
+                            }
+
+                            span {
+                                color: var(--h-bg-vary-two);
+                            }
+                        }
                     }
+                    
                 }
             }
         }

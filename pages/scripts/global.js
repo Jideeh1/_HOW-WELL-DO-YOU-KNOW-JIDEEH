@@ -11,60 +11,60 @@ Yours Truly,\nJideeh\n\n
 
 console.log(コンソルメセージ);
 
-(async function () {
-  const STATUS_URL = "https://api.lanyard.rest/v1/users/563051292251914259";
-  const statusEl = document.getElementById("status");
+// (async function () {
+//   const STATUS_URL = "https://api.lanyard.rest/v1/users/563051292251914259";
+//   const statusEl = document.getElementById("status");
 
-  function applyPresence(presence) {
-    const outer = {
-        online: "#43a25a",
-        idle: "#ca9654",
-        dnd: "#cb363e",
-        offline: "#82838b"
-    }[presence] ?? "#82838b";
+//   function applyPresence(presence) {
+//     const outer = {
+//         online: "#43a25a",
+//         idle: "#ca9654",
+//         dnd: "#cb363e",
+//         offline: "#82838b"
+//     }[presence] ?? "#82838b";
 
-    statusEl.style.backgroundColor = outer;
+//     statusEl.style.backgroundColor = outer;
 
 
-    if (presence === "dnd") {
-      statusEl.style.setProperty("--before-width", ".6cqw");
-      statusEl.style.setProperty("--before-height", ".3cqw");
-      statusEl.style.setProperty("--before-bg", "#1a160e");
-      statusEl.style.setProperty("--before-radius", ".6cqw");
-    } else if (presence === "online") {
-      statusEl.style.setProperty("--before-width", ".3cqw");
-      statusEl.style.setProperty("--before-height", ".3cqw");
-      statusEl.style.setProperty("--before-bg", "transparent");
-      statusEl.style.setProperty("--before-radius", "100%");
-    } else if (presence === "idle" || presence === "offline") {
-      statusEl.style.setProperty("--before-width", ".3cqw");
-      statusEl.style.setProperty("--before-height", ".3cqw");
-      statusEl.style.setProperty("--before-bg", "#1a160e");
-      statusEl.style.setProperty("--before-radius", "100%");
-    } else {
-      statusEl.style.setProperty("--before-width", ".3cqw");
-      statusEl.style.setProperty("--before-height", ".3cqw");
-      statusEl.style.setProperty("--before-bg", "transparent");
-      statusEl.style.setProperty("--before-radius", "100%");
-    }
-  }
+//     if (presence === "dnd") {
+//       statusEl.style.setProperty("--before-width", ".6cqw");
+//       statusEl.style.setProperty("--before-height", ".3cqw");
+//       statusEl.style.setProperty("--before-bg", "#1a160e");
+//       statusEl.style.setProperty("--before-radius", ".6cqw");
+//     } else if (presence === "online") {
+//       statusEl.style.setProperty("--before-width", ".3cqw");
+//       statusEl.style.setProperty("--before-height", ".3cqw");
+//       statusEl.style.setProperty("--before-bg", "transparent");
+//       statusEl.style.setProperty("--before-radius", "100%");
+//     } else if (presence === "idle" || presence === "offline") {
+//       statusEl.style.setProperty("--before-width", ".3cqw");
+//       statusEl.style.setProperty("--before-height", ".3cqw");
+//       statusEl.style.setProperty("--before-bg", "#1a160e");
+//       statusEl.style.setProperty("--before-radius", "100%");
+//     } else {
+//       statusEl.style.setProperty("--before-width", ".3cqw");
+//       statusEl.style.setProperty("--before-height", ".3cqw");
+//       statusEl.style.setProperty("--before-bg", "transparent");
+//       statusEl.style.setProperty("--before-radius", "100%");
+//     }
+//   }
 
-  async function updateStatus() {
-    try {
-      const res = await fetch(STATUS_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      const json = await res.json();
-      const presence = json?.data?.discord_status;
-      applyPresence(presence);
-    } catch (err) {
-      console.error("Failed to fetch presence:", err);
-      applyPresence("offline");
-    }
-  }
+//   async function updateStatus() {
+//     try {
+//       const res = await fetch(STATUS_URL, { cache: "no-store" });
+//       if (!res.ok) throw new Error("HTTP " + res.status);
+//       const json = await res.json();
+//       const presence = json?.data?.discord_status;
+//       applyPresence(presence);
+//     } catch (err) {
+//       console.error("Failed to fetch presence:", err);
+//       applyPresence("offline");
+//     }
+//   }
 
-  updateStatus();
-  setInterval(updateStatus, 1000);
-})();
+//   updateStatus();
+//   setInterval(updateStatus, 1000);
+// })();
 
 const burstOne = `
    <span>I</span> have this favorite flower, one that holds a special place in my heart. I've always dreamed of this flower to endure a long life until mine gave out. To last until I'm gray and old. You can't really call that anything but a pipe dream, really. But it's a simple wish I wanted to come true.
@@ -87,3 +87,8 @@ const burstThree = `
 document.querySelector('.burst-one').innerHTML = burstOne;
 document.querySelector('.burst-two').innerHTML = burstTwo;
 document.querySelector('.third-column').innerHTML = burstThree;
+
+
+
+
+
